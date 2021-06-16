@@ -9,7 +9,7 @@ enableEmoji = true
 [author]
 name = "hydrz"
 email = "n.haoyuan@gmail.com"
-link = "https://hydrz"
+link = "https://hydrz.cn"
 
 [menu]
     [[menu.main]]
@@ -57,21 +57,19 @@ link = "https://hydrz"
 description = "About LoveIt Theme"
 keywords = ["Theme", "Hugo"]
 defaultTheme = "auto"
-gitRepo = "https://github.com/dillonzq/LoveIt"
+gitRepo = "https://github.com/hydrz/blog"
 fingerprint = "sha256"
 dateFormat = "2006-01-02"
-images = ["/logo.png"]
-
 
     [params.footer]
     enable = true
-    custom = ''
+    custom = '<meting-js server="tencent" type="playlist" id="2248204803" autoplay="autoplay" order="random" fixed="true"></meting-js>'
     hugo = true
     copyright = true
     author = true
     since = 2019
-    icp = '<a class="text-color" href="https://beian.miit.gov.cn" target="_blank">京ICP证030173号</a>'
-    license = '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+    icp = '<a class="text-color" href="https://beian.miit.gov.cn" target="_blank">闽ICP备14017077号-3</a>'
+    license = '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank">CC BY 4.0</a>'
 
     [params.section]
     paginate = 20
@@ -165,8 +163,8 @@ images = ["/logo.png"]
 
             [params.page.comment.valine]
             enable = true
-            appId = "QGzwQXOqs5JOhN4RGPOkR2mR-MdYXbMMI"
-            appKey = "WBmoGyJtbqUswvfLh6L8iEBr"
+            appId = "aFSOiatQ8UF0AlGEXqGvlJwh-gzGzoHsz"
+            appKey = "yhpe9DejoaWvd2Pxr2YlsOgJ"
             placeholder = ""
             avatar = "mp"
             meta = ""
@@ -176,7 +174,7 @@ images = ["/logo.png"]
             recordIP = true
             highlight = true
             enableQQ = false
-            serverURLs = "https://leancloud.hugoloveit.com"
+            serverURLs = ""
             emoji = ""
             [params.page.comment.facebook]
             enable = false
@@ -267,6 +265,7 @@ images = ["/logo.png"]
     themeColor = "#ffffff"
     iconColor = "#5bbad5"
     tileColor = "#da532c"
+
     [params.search]
     enable = true
     type = "lunr"
@@ -276,7 +275,6 @@ images = ["/logo.png"]
     snippetLength = 30
     highlightTag = "em"
     absoluteURL = false
-
         [params.search.algolia]
         index = "index"
         appID = "PASDMWALPK"
@@ -289,7 +287,7 @@ images = ["/logo.png"]
         gravatarEmail = "n.haoyuan@gmail.com"
         avatarURL = ""
         title = "夜访萤火虫"
-        subtitle = "The night cannot smother your fire."
+        subtitle = "萤火虫的光点虽然微弱，</br>但亮着便是向黑暗挑战。"
         typeit = true
         social = true
         disclaimer = ""
@@ -298,7 +296,7 @@ images = ["/logo.png"]
         paginate = 6
 
     [params.social]
-    GitHub = "xxxx"
+    GitHub = "hydrz"
     Linkedin = ""
     Twitter = ""
     Instagram = ""
@@ -359,12 +357,8 @@ images = ["/logo.png"]
     XMPP = ""
     Matrix = ""
     Bilibili = ""
-    Email = "n.haoyuan@gmail.com"
+    Email = ""
     RSS = true
-        [params.social.Mastodon]
-        id = ""
-        prefix = ""
-
 
 [markup]
     [markup.highlight]
@@ -395,7 +389,8 @@ filename = "sitemap.xml"
 priority = 0.5
 
 [Permalinks]
-posts = ":year/:month/:filename"
+# posts = ":year/:month/:filename"
+posts = ":filename"
 
 
 [privacy]
