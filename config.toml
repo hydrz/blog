@@ -291,6 +291,8 @@ dateFormat = "2006-01-02"
         typeit = true
         social = true
         disclaimer = ""
+        statusEmoji = "🌌"
+        statusText = "Focusing"
         [params.home.posts]
         enable = true
         paginate = 6
