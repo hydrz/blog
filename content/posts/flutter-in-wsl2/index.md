@@ -22,7 +22,7 @@ toc:
 math:
   enable: false
 lightgallery: false
-license: 版权声明：自由转载-非商用-非衍生-转载请注明出处！（<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank">创意共享4.0许可证</a>）
+license: 版权声明：自由转载-非商用-非衍生-转载请注明出处！（<a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">创意共享4.0许可证</a>）
 ---
 
 本文教你如何在Windows的子系统WSL2来运行Ubuntu 20.0.4 TLS作为Flutter的开发环境，使用真机或模拟器进行调试， 并支持热更新。
