@@ -54,8 +54,8 @@ link = "https://www.hydrz.cn"
     weight = 5
 
 [params]
-description = "About LoveIt Theme"
-keywords = ["Theme", "Hugo"]
+description = "关注 Golang、Flutter、微服务、容器、网络、大数据等技术"
+keywords = ["Golang", "Flutter", "微服务", "容器", "网络", "大数据"]
 defaultTheme = "auto"
 gitRepo = "https://github.com/hydrz/blog"
 fingerprint = "sha256"
