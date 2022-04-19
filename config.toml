@@ -65,11 +65,11 @@ dateFormat = "2006-01-02"
     enable = true
     custom = '<meting-js server="tencent" type="playlist" id="2248204803" autoplay="autoplay" order="random" fixed="true"></meting-js>'
     hugo = true
-    copyright = true
+    copyright = 'true'
     author = true
     since = 2019
     icp = '<a class="text-color" href="https://beian.miit.gov.cn" target="_blank">闽ICP备14017077号-3</a>'
-    license = '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank">CC BY 4.0</a>'
+    license = '<a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh">自由转载-非商用-非衍生-保持署名</a>'
 
     [params.section]
     paginate = 20

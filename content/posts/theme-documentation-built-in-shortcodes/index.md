@@ -1,5 +1,5 @@
 ---
-weight: 3
+weight: 97
 title: "主题文档 - 内置 Shortcodes"
 date: 2020-03-04T16:29:59+08:00
 lastmod: 2020-03-04T16:29:59+08:00
@@ -151,12 +151,12 @@ Hugo 附带了一组预定义的 shortcodes, 它们实现了一些非常常见�
 一个 `tweet` 示例:
 
 ```markdown
-{{</* tweet 877500564405444608 */>}}
+{{</* tweet user="SanDiegoZoo" id="1453110110599868418" */>}}
 ```
 
 呈现的输出效果如下:
 
-{{< tweet 877500564405444608 >}}
+{{< tweet user="SanDiegoZoo" id="1453110110599868418" >}}
 
 ## 8 vimeo
 
