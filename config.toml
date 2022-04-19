@@ -54,7 +54,7 @@ link = "https://www.hydrz.cn"
     weight = 5
 
 [params]
-description = "关注 Golang、Flutter、微服务、容器、网络、大数据等技术"
+description = "关注Golang、Flutter、微服务、容器、网络、大数据等技术的个人博客。"
 keywords = ["Golang", "Flutter", "微服务", "容器", "网络", "大数据"]
 defaultTheme = "auto"
 gitRepo = "https://github.com/hydrz/blog"
