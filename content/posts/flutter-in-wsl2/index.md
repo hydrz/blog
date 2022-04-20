@@ -262,7 +262,7 @@ netsh interface portproxy add v4tov4 protocol=tcp listenaddress=* listenport=555
 ```
 
 还需要设置一下防火墙规则
-```
+```powershell
 New-NetFireWallRule -DisplayName 'Andorid Emulator Firewall Unlock' -Direction Outbound -LocalPort 5550,5555 -Action Allow -Protocol TCP
 New-NetFireWallRule -DisplayName 'Andorid Emulator Firewall Unlock' -Direction Inbound -LocalPort 5550,5555 -Action Allow -Protocol TCP
 ```
