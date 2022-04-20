@@ -63,7 +63,7 @@ dateFormat = "2006-01-02"
 
     [params.footer]
     enable = true
-    custom = '<meting-js server="tencent" type="playlist" id="2248204803" autoplay="autoplay" order="random" fixed="true"></meting-js>'
+    custom = '<meting-js server="tencent" type="playlist" id="2248204803" lrc-type="false" order="random" fixed="true"></meting-js>'
     hugo = true
     copyright = 'true'
     author = true
@@ -204,163 +204,163 @@ dateFormat = "2006-01-02"
             lightTheme = "github-light"
             darkTheme = "github-dark"
 
-        [params.page.library]
-            [params.page.library.css]
-            [params.page.library.js]
-        [params.page.seo]
+[params.page.library]
+    [params.page.library.css]
+    [params.page.library.js]
+[params.page.seo]
 
-        images = []
-            [params.page.seo.publisher]
-            name = "xxxx"
-            logoUrl = "/images/avatar.png"
-
-
-    [params.typeit]
-    speed = 100
-    cursorSpeed = 1000
-    cursorChar = "|"
-    duration = -1
-
-    [params.verification]
-    google = ""
-    bing = ""
-    yandex = ""
-    pinterest = ""
-    baidu = ""
+images = []
+    [params.page.seo.publisher]
+    name = "xxxx"
+    logoUrl = "/images/avatar.png"
 
 
-    [params.seo]
-    image = "/images/preview.png"
-    thumbnailUrl = "/images/screenshot.png"
+[params.typeit]
+speed = 100
+cursorSpeed = 1000
+cursorChar = "|"
+duration = -1
+
+[params.verification]
+google = ""
+bing = ""
+yandex = ""
+pinterest = ""
+baidu = ""
 
 
-    [params.analytics]
-    enable = false
-        [params.analytics.google]
-        id = ""
-        anonymizeIP = true
-        [params.analytics.fathom]
-        id = ""
-        server = ""
-
-    [params.cookieconsent]
-    enable = false
-        [params.cookieconsent.content]
-        message = ""
-        dismiss = ""
-        link = ""
+[params.seo]
+image = "/images/preview.png"
+thumbnailUrl = "/images/screenshot.png"
 
 
-    [params.cdn]
-    data = "jsdelivr.yml"
+[params.analytics]
+enable = false
+    [params.analytics.google]
+    id = ""
+    anonymizeIP = true
+    [params.analytics.fathom]
+    id = ""
+    server = ""
 
-    [params.compatibility]
-    polyfill = false
-    objectFit = false
+[params.cookieconsent]
+enable = false
+    [params.cookieconsent.content]
+    message = ""
+    dismiss = ""
+    link = ""
 
-    [params.app]
-    title = "夜访萤火虫"
-    noFavicon = false
-    svgFavicon = ""
-    themeColor = "#ffffff"
-    iconColor = "#5bbad5"
-    tileColor = "#da532c"
 
-    [params.search]
+[params.cdn]
+data = "jsdelivr.yml"
+
+[params.compatibility]
+polyfill = false
+objectFit = false
+
+[params.app]
+title = "夜访萤火虫"
+noFavicon = false
+svgFavicon = ""
+themeColor = "#ffffff"
+iconColor = "#5bbad5"
+tileColor = "#da532c"
+
+[params.search]
+enable = true
+type = "lunr"
+contentLength = 4000
+placeholder = ""
+maxResultLength = 10
+snippetLength = 30
+highlightTag = "em"
+absoluteURL = false
+    [params.search.algolia]
+    index = "index"
+    appID = "PASDMWALPK"
+    searchKey = "b42948e51daaa93df92381c8e2ac0f93"
+
+[params.home]
+rss = 10
+    [params.home.profile]
     enable = true
-    type = "lunr"
-    contentLength = 4000
-    placeholder = ""
-    maxResultLength = 10
-    snippetLength = 30
-    highlightTag = "em"
-    absoluteURL = false
-        [params.search.algolia]
-        index = "index"
-        appID = "PASDMWALPK"
-        searchKey = "b42948e51daaa93df92381c8e2ac0f93"
+    gravatarEmail = "n.haoyuan@gmail.com"
+    avatarURL = ""
+    title = "夜访萤火虫"
+    subtitle = "萤火虫的光点虽然微弱，</br>但亮着便是向黑暗挑战。"
+    typeit = true
+    social = true
+    disclaimer = ""
+    statusEmoji = "🌌"
+    statusText = "Focusing"
+    [params.home.posts]
+    enable = true
+    paginate = 6
 
-    [params.home]
-    rss = 10
-        [params.home.profile]
-        enable = true
-        gravatarEmail = "n.haoyuan@gmail.com"
-        avatarURL = ""
-        title = "夜访萤火虫"
-        subtitle = "萤火虫的光点虽然微弱，</br>但亮着便是向黑暗挑战。"
-        typeit = true
-        social = true
-        disclaimer = ""
-        statusEmoji = "🌌"
-        statusText = "Focusing"
-        [params.home.posts]
-        enable = true
-        paginate = 6
-
-    [params.social]
-    GitHub = "hydrz"
-    Linkedin = ""
-    Twitter = ""
-    Instagram = ""
-    Facebook = ""
-    Telegram = ""
-    Medium = ""
-    Gitlab = ""
-    Youtubelegacy = ""
-    Youtubecustom = ""
-    Youtubechannel = ""
-    Tumblr = ""
-    Quora = ""
-    Keybase = ""
-    Pinterest = ""
-    Reddit = ""
-    Codepen = ""
-    FreeCodeCamp = ""
-    Bitbucket = ""
-    Stackoverflow = ""
-    Weibo = ""
-    Odnoklassniki = ""
-    VK = ""
-    Flickr = ""
-    Xing = ""
-    Snapchat = ""
-    Soundcloud = ""
-    Spotify = ""
-    Bandcamp = ""
-    Paypal = ""
-    Fivehundredpx = ""
-    Mix = ""
-    Goodreads = ""
-    Lastfm = ""
-    Foursquare = ""
-    Hackernews = ""
-    Kickstarter = ""
-    Patreon = ""
-    Steam = ""
-    Twitch = ""
-    Strava = ""
-    Skype = ""
-    Whatsapp = ""
-    Zhihu = ""
-    Douban = ""
-    Angellist = ""
-    Slidershare = ""
-    Jsfiddle = ""
-    Deviantart = ""
-    Behance = ""
-    Dribbble = ""
-    Wordpress = ""
-    Vine = ""
-    Googlescholar = ""
-    Researchgate = ""
-    Thingiverse = ""
-    Devto = ""
-    Gitea = ""
-    XMPP = ""
-    Matrix = ""
-    Bilibili = ""
-    Email = ""
-    RSS = true
+[params.social]
+GitHub = "hydrz"
+Linkedin = ""
+Twitter = ""
+Instagram = ""
+Facebook = ""
+Telegram = ""
+Medium = ""
+Gitlab = ""
+Youtubelegacy = ""
+Youtubecustom = ""
+Youtubechannel = ""
+Tumblr = ""
+Quora = ""
+Keybase = ""
+Pinterest = ""
+Reddit = ""
+Codepen = ""
+FreeCodeCamp = ""
+Bitbucket = ""
+Stackoverflow = ""
+Weibo = ""
+Odnoklassniki = ""
+VK = ""
+Flickr = ""
+Xing = ""
+Snapchat = ""
+Soundcloud = ""
+Spotify = ""
+Bandcamp = ""
+Paypal = ""
+Fivehundredpx = ""
+Mix = ""
+Goodreads = ""
+Lastfm = ""
+Foursquare = ""
+Hackernews = ""
+Kickstarter = ""
+Patreon = ""
+Steam = ""
+Twitch = ""
+Strava = ""
+Skype = ""
+Whatsapp = ""
+Zhihu = ""
+Douban = ""
+Angellist = ""
+Slidershare = ""
+Jsfiddle = ""
+Deviantart = ""
+Behance = ""
+Dribbble = ""
+Wordpress = ""
+Vine = ""
+Googlescholar = ""
+Researchgate = ""
+Thingiverse = ""
+Devto = ""
+Gitea = ""
+XMPP = ""
+Matrix = ""
+Bilibili = ""
+Email = ""
+RSS = true
 
 [markup]
     [markup.highlight]
@@ -381,9 +381,9 @@ dateFormat = "2006-01-02"
         [markup.goldmark.renderer]
         unsafe = true
 
-    [markup.tableOfContents]
-    startLevel = 1
-    endLevel = 6
+[markup.tableOfContents]
+startLevel = 1
+endLevel = 6
 
 [sitemap]
 changefreq = "weekly"
