@@ -37,6 +37,7 @@ license: 版权声明：自由转载-非商用-非衍生-转载请注明出处�
 - WSL 2 (Ubuntu 20.04)
 - Visual Studio Code (1.66.2)
 - Flutter (2.10.5)
+- Android (11.0)
 
 ---
 
@@ -164,9 +165,9 @@ C:\Android\platform-tools
 C:\Android\emulator
 ```
 
-接下来的步骤和在WSL2中[安装 Android SDK]一样， 打开CMD，执行以下命令
+接下来的步骤和在WSL2中[安装 Android SDK]一样， 打开Powershell，执行以下命令
 
-```cmd
+```powershell
 sdkmanager --version
 sdkmanager --list
 sdkmanager --install "system-images;android-32;google_apis;x86_64" "platform-tools" "platforms;android-32" "build-tools;32.0.0"
@@ -178,7 +179,7 @@ sdkmanager --licenses
 
 还是在CMD中执行：
 
-```cmd
+```powershell
 avdmanager list
 avdmanager create avd -n flutter_emulator -d pixel_5 -k "system-images;android-32;google_apis;x86_64"
 avdmanager list avd
@@ -230,9 +231,7 @@ flutter run --verbose --host-vmservice-port=43550 --dds-port=43552
 ### 模拟器调试最终解决方案 {#basic-configuration}
 
 {{< admonition >}}
-
 前面如果进行了 `ADB_SERVER_SOCKET` 配置的记得把环境变量去掉一下。另外可以运行一下 `adb forward --remove-all` 把之前的映射给关一下。
-
 {{< /admonition >}}
 
 第一步是打开模拟器上的开发者模式
@@ -243,15 +242,29 @@ flutter run --verbose --host-vmservice-port=43550 --dds-port=43552
 
 ![打开真机调试](emulator-pair.jpg)
 
-到这里这个 **IP地址** 是不能直接连接的，然后我们需要在windows用 `adb forward` 做一次端口映射。
+到这里这个 **IP地址** 是不能直接连接的，然后我们需要在windows用 `adb forward` 将端口映射到本机，再通过 `netsh interface portproxy` 让端口可以给 **WSL** 访问。
 
-```cmd
+{{< admonition >}}
+这里因为要用到端口映射，需要用 **管理员权限** 打开powershell
+{{< /admonition >}}
+
+```powershell
 # on windows
 adb forward --remove-all
-# 配对的端口
-adb forward tcp:15550 tcp:38049
-# 连接的端口
-adb forward tcp:15555 tcp:38567
+adb forward tcp:5550 tcp:38049 # 配对的端口
+netsh interface portproxy add v4tov4 protocol=tcp listenaddress=* listenport=5550 connectaddress=localhost connectport=5550
+```
+
+再将默认的 **5555** 也端口映射一下，供之后连接使用。可以将下面的命令放到计划任务中，选择登录时运行，勾选使用最高权限。
+
+```powershell
+netsh interface portproxy add v4tov4 protocol=tcp listenaddress=* listenport=5555 connectaddress=localhost connectport=5555
+```
+
+还需要设置一下防火墙规则
+```
+New-NetFireWallRule -DisplayName 'Andorid Emulator Firewall Unlock' -Direction Outbound -LocalPort 5550,5555 -Action Allow -Protocol TCP
+New-NetFireWallRule -DisplayName 'Andorid Emulator Firewall Unlock' -Direction Inbound -LocalPort 5550,5555 -Action Allow -Protocol TCP
 ```
 
 成功映射后就可以在 ***WSL2*** 中进行配对连接了
@@ -259,8 +272,15 @@ adb forward tcp:15555 tcp:38567
 ```bash
 # on wsl2
 export WSL_HOST_IP="$(tail -1 /etc/resolv.conf | cut -d' ' -f2)"
-adb pair $WSL_HOST_IP:15550
-adb connect $WSL_HOST_IP:15555
+adb pair $WSL_HOST_IP:5550
+```
+
+![配对成功](emulator-pair-success.png)
+
+配对成功后就能用**5555**端口进行连接
+
+```bash
+adb connect $WSL_HOST_IP:5555
 adb devices
 ```
 
