@@ -63,7 +63,7 @@ dateFormat = "2006-01-02"
 
     [params.footer]
     enable = true
-    custom = '<meting-js server="tencent" type="playlist" id="2248204803" lrc-type="false" order="random" fixed="true"></meting-js>'
+    custom = ''
     hugo = true
     copyright = 'true'
     author = true
