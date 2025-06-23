@@ -1,10 +1,4 @@
-github.com/hydrz/hugo-theme-github v0.2.10 h1:2iXFwFwP2GzhCLJk+A+iR5CIYaCuZVaRH1saNMD4Z8M=
-github.com/hydrz/hugo-theme-github v0.2.10/go.mod h1:+Wadivivi9i1TBehiqKzZiwq3tZfnyTxNFaw+CXBfY8=
-github.com/hydrz/hugo-theme-github v0.2.11-0.20210616060202-0de0bea3bfce h1:Ijb2c1SX3jvKWrXoLUBuYvOKFHCujfOG+KJSINODxK4=
-github.com/hydrz/hugo-theme-github v0.2.11-0.20210616060202-0de0bea3bfce/go.mod h1:zKzFwjDtNXPu3xEbJCKnnR9iq8sPzJPTC8pVrio/Inw=
-github.com/hydrz/hugo-theme-github v0.102.10 h1:sHE+DEoY4DpIvrpZMdcyCri7sAGUGDPcz3po2xStjF0=
-github.com/hydrz/hugo-theme-github v0.102.10/go.mod h1:zKzFwjDtNXPu3xEbJCKnnR9iq8sPzJPTC8pVrio/Inw=
-github.com/hydrz/hugo-theme-github v0.102.11 h1:E/PrrY4XooCC6a6vb3is8iapXe1A0Sip9iagX/99rwA=
-github.com/hydrz/hugo-theme-github v0.102.11/go.mod h1:zKzFwjDtNXPu3xEbJCKnnR9iq8sPzJPTC8pVrio/Inw=
+github.com/hydrz/hugo-theme-github v0.2.11 h1:/x21y3im/s9ZSl0lFpIOy3FJuRxO7muQ5fZZgnZw+mI=
+github.com/hydrz/hugo-theme-github v0.2.11/go.mod h1:zKzFwjDtNXPu3xEbJCKnnR9iq8sPzJPTC8pVrio/Inw=
 github.com/hydrz/hugo-theme-github v0.102.12 h1:vscLY3gtiyANVTyiYK9nGgtvRL9yfPi9I01mwDao3uw=
 github.com/hydrz/hugo-theme-github v0.102.12/go.mod h1:zKzFwjDtNXPu3xEbJCKnnR9iq8sPzJPTC8pVrio/Inw=
