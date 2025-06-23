@@ -1,4 +1,4 @@
-baseURL = "https://www.hydrz.cn"
+baseURL = "https://hydrz.cn"
 defaultContentLanguage = "zh-cn"
 theme = ["github.com/hydrz/hugo-theme-github"]
 title = "夜访萤火虫"
@@ -9,7 +9,7 @@ enableEmoji = true
 [author]
 name = "hydrz"
 email = "n.haoyuan@gmail.com"
-link = "https://www.hydrz.cn"
+link = "https://hydrz.cn"
 
 [menu]
     [[menu.main]]
