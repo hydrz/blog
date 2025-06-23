@@ -1,6 +1,6 @@
 # blog
 
-[![github pages](https://github.com/hydrz/blog/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/hydrz/blog/actions/workflows/gh-pages.yml)
+[![github pages](https://github.com/hydrz/blog/actions/workflows/hugo.yml/badge.svg)](https://github.com/hydrz/blog/actions/workflows/hugo.yml)
 
 个人博客，地址：https://www.hydrz.cn/
 
